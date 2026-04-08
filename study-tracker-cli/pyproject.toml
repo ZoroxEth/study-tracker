@@ -1,0 +1,21 @@
+[project]
+name = "study-tracker-cli"
+version = "1.0.0"
+description = "A powerful CLI study tracker with analytics and Pomodoro timer"
+authors = ["Developer <dev@example.com>"]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "typer>=0.9.0",
+    "rich>=13.0.0",
+    "click>=8.0.0",
+    "pydantic>=2.0.0",
+    "platformdirs>=3.0.0",
+]
+
+[project.scripts]
+study = "main:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
